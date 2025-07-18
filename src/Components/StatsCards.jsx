@@ -1,19 +1,22 @@
 import React from 'react';
 import CoursesHeader from './CoursesHeader';
+import people from '../assets/people.svg';
+import book from '../assets/book.svg';
+import growth from '../assets/growth.svg'
 
 const statsData = [
     {
-        icon: "https://hubble.cdn.chittiapp.com/cdn_uploads/46440e80-5573-11ef-b501-3f25b685e045_group.svg",
+        icon: people,
         title: "5,000+",
         subtitle: "Total Students",
     },
     {
-        icon: "https://hubble.cdn.chittiapp.com/cdn_uploads/18933bb0-588d-11ef-9118-0dc1b112eed6_book.svg",
+        icon: book,
         title: "12+",
         subtitle: "Courses",
     },
     {
-        icon: "https://hubble.cdn.chittiapp.com/cdn_uploads/4645e340-5573-11ef-b501-3f25b685e045_trade-up.svg",
+        icon: growth,
         title: "80%",
         subtitle: "Happy outcome",
     },

@@ -1,12 +1,14 @@
 import React from 'react';
-import SwitcherComponent from './SwitcherComponent'
+import SwitcherComponent from './SwitcherComponent';
+import Courses from '../assets/playicon.svg';
+import Dot from '../assets/dot.webp'
 const CoursesHeader = () => {
     return (
         <div className="uk-section">
             <div className="uk-padding-small uk-padding-remove-horizontal@m uk-padding-small@l uk-text-center">
                 {/* Heading */}
                 <img
-                    src="https://hubble.cdn.chittiapp.com/cdn_uploads/f0cbd840-4fe9-11ef-b1fe-5781ecb07285_live-illustration.svg"
+                    src= {Courses}
                     alt="Live Illustration"
                     style={{
                         height: '100px',
@@ -60,7 +62,7 @@ const CoursesHeader = () => {
                         }}
                     />
                     <img
-                        src="https://hubble.cdn.chittiapp.com/cdn_uploads/0de4bc50-4fd4-11ef-b1fe-5781ecb07285_h-dot.png"
+                        src={Dot}
                         alt="dot"
                         style={{
                             height: '18px',

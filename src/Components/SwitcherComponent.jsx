@@ -14,6 +14,46 @@ const SwitcherComponent = () => {
         switchers.forEach(switcher => UIkit.switcher(switcher));
     }, []);
 
+    const courses = [
+        {
+            title: "B.Sc Computer Science",
+            img: "https://wp.wpi.edu/catalyst/files/2023/04/Computer-science-jobs-1.jpg",
+            logo: "https://rsmartedu.in/wp-content/uploads/2024/01/cropped-Rsmart-Logo-ORG-01-192x192.png",
+            "duration": "36 Months",
+            "mode": "Full Time",
+            "eligibility": "Eligibility +2",
+            "brochure": "#"
+        },
+        {
+            title: "B.Sc Information Technology",
+            img: "https://www.captechu.edu/sites/default/files/How%20does%20your%20computer%20science%20degree%20help%20you%20with%20cybersecurity.jpg",
+            logo: "https://rsmartedu.in/wp-content/uploads/2024/01/cropped-Rsmart-Logo-ORG-01-192x192.png",
+            "duration": "36 Months",
+            "mode": "Full Time",
+            "eligibility": "Eligibility +2",
+            "brochure": "#"
+        },
+        {
+            title: "B.Sc CS with Cyber Security",
+            img: "https://1602894.fs1.hubspotusercontent-na1.net/hub/1602894/hubfs/cybersecurity%20%281%29.webp?width=1170&name=cybersecurity%20%281%29.webp",
+            logo: "https://rsmartedu.in/wp-content/uploads/2024/01/cropped-Rsmart-Logo-ORG-01-192x192.png",
+            "duration": "36 Months",
+            "mode": "Full Time",
+            "eligibility": "Eligibility +2",
+            "brochure": "#"
+        },
+        {
+            title: "B.Sc CS with AI & DS",
+            img: "https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg",
+            logo: "https://rsmartedu.in/wp-content/uploads/2024/01/cropped-Rsmart-Logo-ORG-01-192x192.png",
+            "duration": "36 Months",
+            "mode": "Full Time",
+            "eligibility": "Eligibility +2",
+            "brochure": "#"
+        }
+    ];
+
+
     return (
         <div className="uk-container uk-margin-medium-top">
             {/* Pill Navigation Switcher */}
@@ -30,529 +70,41 @@ const SwitcherComponent = () => {
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="sets: true; autoplay: true;">
 
                         <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid-small uk-margin-top">
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2000+
-                                                    </span>
-                                                </div>
+                            {courses.map((course, index) => (
+                                <div key={index}>
+                                    <div className="uk-padding-small uk-border-rounded">
+                                        <div className="second hero uk-card-hover">
+                                            <img className="hero-profile-img" src={course.img} alt="Profile" />
+                                            <div className="hero-description-bk"></div>
 
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-xsmall-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        24 Months
-                                                    </span>
-                                                </div>
+                                            <div className="hero-logo">
+                                                <img src={course.logo} alt="Logo" />
                                             </div>
 
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
+                                            <div className="hero-description">
+                                                <p>{course.title}</p>
+                                            </div>
 
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    UG
-                                                </span>
+                                            <div className="hero-date uk-text-center uk-margin-small-top">
+                                                <small className='uk-margin-remove'><span uk-icon="calendar"></span> {course.duration}</small><br/>
+                                                <small className='uk-margin-remove '><span uk-icon="clock"></span> {course.mode}</small><br/>
+                                                <small className='uk-margin-remove '><span uk-icon="users"></span> {course.eligibility}</small>
                                             </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            MBA
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Lead teams, drive growth, master business strategy.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
+
+                                            <div className="hero-btn">
+                                                <a href={course.brochure}>
+                                                    <span className="uk-margin-small-right" uk-icon="icon: download"></span>
+                                                    Brochure
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2500+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-xsmall-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        36 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.Sc (AIDS)
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Decode data, trained AI Agents, solve real problems.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2500+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        36 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.Sc Information Technology
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Build digital systems, apps & secure networks.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2500+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        36 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.Sc Computer Science & Engg
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Master coding, algorithms & future tech tools.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2300+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        48 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.E CSE (Cybersecurity)
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Protect systems, detect threats, defend digital assets.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2500+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        36 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.Sc CS (Cybersecurity)
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Safeguard data, master ethical hacking tools.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2500+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                        uk-svg />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        36 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    IT
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            B.Sc Data Science & Analytics
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Become a Data Scientist. No Coding Knowledge Required.
-                                        </p>
-                                        <hr />
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-left">
-                                                <div class="">
-                                                    <button class="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div class="uk-float-right">
-                                                <div>
-                                                    <button class="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
-
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="/#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="/#" data-uk-slidenav-next data-uk-slider-item="next"></a>
-
+                        <div class="uk-flex uk-flex-center uk-margin-top">
+                            <ul class="uk-slider-nav uk-dotnav"></ul>
+                        </div>
                     </div>
                 </div>
                 <div>
