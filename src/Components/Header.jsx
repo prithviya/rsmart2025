@@ -1,12 +1,16 @@
 import React from 'react';
-import Banner from './Banner'
+import Banner from './Banner';
+import bannerbg from '../assets/banner.svg';
 
 function Header() {
     return (
         <div>
             <div className="uk-section-secondary uk-background-cover uk-preserve-color"
                 style={{
-                    backgroundImage: "url('https://hubble.cdn.chittiapp.com/cdn_uploads/018042e0-5c40-11ef-9cf5-d5259e0ae0df_uptor-bg-top.svg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: 'center center'
+                    backgroundImage: `url(${bannerbg})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: 'center center'
                 }}>
 
                 <div className="cls-inactive: uk-navbar-container uk-navbar-transparent uk-light;">
@@ -53,12 +57,12 @@ function Header() {
                                     </ul>
                                 </div>
                             </div>
-                            <hr className='uk-margin-remove'/>
+                            <hr className='uk-margin-remove' />
                         </div>
-                       
+
                     </nav>
                 </div>
-                
+
                 <Banner />
             </div>
         </div>
