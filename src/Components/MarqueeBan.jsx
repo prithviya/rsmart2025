@@ -1,30 +1,66 @@
 import React from 'react';
+import profile1 from '../assets/profile1.jpeg';
+import profile2 from '../assets/profile2.jpeg';
+import profile3 from '../assets/profile3.jpg';
+import profile4 from '../assets/profile4.jpeg';
+import profile5 from '../assets/profile5.jpg';
+import profile6 from '../assets/profile6.jpeg';
+import profile7 from '../assets/profile7.jpeg';
+import profile8 from '../assets/profile8.jpeg';
+import profile9 from '../assets/profile9.jpg';
+import profile10 from '../assets/profile10.jpeg';
+import badge from '../assets/badgecert.webp'
 
 function MarqueeBan() {
     const staffData = [
         {
-            image: 'https://hubble.cdn.chittiapp.com/cdn_uploads/6eb9d910-bc4a-11ef-9467-dbf64511c27d_senthil-vel-electronics-engineer.jpg',
+            image: profile1,
             name: 'John Doe',
             designation: 'CEO'
         },
         {
-            image: 'https://hubble.cdn.chittiapp.com/cdn_uploads/8fca3410-bc4a-11ef-9467-dbf64511c27d_anjali-data-scientist.jpg',
+            image: profile2,
             name: 'Jane Smith',
             designation: 'CTO'
         },
         {
-            image: 'https://hubble.cdn.chittiapp.com/cdn_uploads/7a005a60-bc4a-11ef-9467-dbf64511c27d_meghana-developer.jpg',
+            image: profile3,
             name: 'Mike Johnson',
             designation: 'Designer'
         },
         {
-            image: 'https://hubble.cdn.chittiapp.com/cdn_uploads/7275a890-bc4a-11ef-9467-dbf64511c27d_priya-data-analyst.jpg',
+            image: profile4,
             name: 'Sarah Williams',
             designation: 'Developer'
         },
         {
-            image: 'https://hubble.cdn.chittiapp.com/cdn_uploads/8cddc280-bc4a-11ef-9467-dbf64511c27d_devi-developer.jpg',
-            name: 'David Brown',
+            image: profile5,
+            designation: 'Marketing'
+        }
+    ];
+    const staffData1 = [
+        {
+            image: profile6,
+            name: 'John Doe',
+            designation: 'CEO'
+        },
+        {
+            image: profile7,
+            name: 'Jane Smith',
+            designation: 'CTO'
+        },
+        {
+            image: profile8,
+            name: 'Mike Johnson',
+            designation: 'Designer'
+        },
+        {
+            image: profile9,
+            name: 'Sarah Williams',
+            designation: 'Developer'
+        },
+        {
+            image: profile10,
             designation: 'Marketing'
         }
     ];
@@ -50,7 +86,7 @@ function MarqueeBan() {
                                                 </p>
                                             </div>
                                             <div className='uk-text-right uk-float-right uk-margin-small-left'>
-                                                <img width="30" height="30" src="https://hubble.cdn.chittiapp.com/cdn_uploads/a03a46a0-4f26-11ef-bb2f-cf969e117417_Verified-Badge.png" alt="approval" />
+                                                <img width="30" height="30" src={badge} alt="approval" />
                                             </div>
                                         </div>
                                     </div>
@@ -61,8 +97,8 @@ function MarqueeBan() {
                 </div>
                 <div>
                     <div className="uk-card uk-card-default" style={{ height: '635px', overflow: 'hidden', background: 'transparent' }}>
-                        <div className="" style={{ animation: 'scrollUp 20s linear infinite', padding: '0' }}>
-                            {staffData.map((staff, index) => (
+                        <div className="" style={{ animation: 'scrollDown 20s linear infinite', padding: '0' }}>
+                            {staffData1.map((staff, index) => (
                                 <div key={index} className="cus-card-bg"
                                     style={{ margin: '0', border: '1px solid #f7f7f7', marginBottom: '10px', borderRadius: '15px', }}>
                                     <div className="uk-margin">
@@ -78,7 +114,7 @@ function MarqueeBan() {
                                                 </p>
                                             </div>
                                             <div className='uk-text-right uk-float-right uk-margin-small-left'>
-                                                <img width="30" height="30" src="https://hubble.cdn.chittiapp.com/cdn_uploads/a03a46a0-4f26-11ef-bb2f-cf969e117417_Verified-Badge.png" alt="approval" />
+                                                <img width="30" height="30" src={badge} alt="approval" />
                                             </div>
                                         </div>
                                     </div>
@@ -97,6 +133,14 @@ function MarqueeBan() {
             }
             100% {
               transform: translateY(-50%);
+            }
+          }
+            @keyframes scrollDown {
+            0% {
+              transform: translateY(-50%);
+            }
+            100% {
+              transform: translateY(0);
             }
           }
         `}
