@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.1787ec7b.css",
-    "main.js": "/my-website/static/js/main.a865e999.js",
-    "static/js/453.8affe517.chunk.js": "/my-website/static/js/453.8affe517.chunk.js",
-    "static/media/logo.svg": "/my-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/my-website/index.html",
-    "main.1787ec7b.css.map": "/my-website/static/css/main.1787ec7b.css.map",
-    "main.a865e999.js.map": "/my-website/static/js/main.a865e999.js.map",
-    "453.8affe517.chunk.js.map": "/my-website/static/js/453.8affe517.chunk.js.map"
+    "main.css": "/rsmart2025/static/css/main.1787ec7b.css",
+    "main.js": "/rsmart2025/static/js/main.7e83c62b.js",
+    "static/js/453.8affe517.chunk.js": "/rsmart2025/static/js/453.8affe517.chunk.js",
+    "static/media/logo.svg": "/rsmart2025/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rsmart2025/index.html",
+    "main.1787ec7b.css.map": "/rsmart2025/static/css/main.1787ec7b.css.map",
+    "main.7e83c62b.js.map": "/rsmart2025/static/js/main.7e83c62b.js.map",
+    "453.8affe517.chunk.js.map": "/rsmart2025/static/js/453.8affe517.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1787ec7b.css",
-    "static/js/main.a865e999.js"
+    "static/js/main.7e83c62b.js"
   ]
 }
