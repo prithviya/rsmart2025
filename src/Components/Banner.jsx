@@ -1,5 +1,12 @@
 import React from 'react';
 import MarqueeBan from './MarqueeBan';
+import learn from '../assets/learn.svg';
+import apply from '../assets/apply.svg';
+import placed from '../assets/placed.svg';
+import student from '../assets/setpics.webp';
+import star from '../assets/5star.webp';
+import sparkle from '../assets/sparkle.gif'
+
 
 function Banner() {
     return (
@@ -37,7 +44,7 @@ function Banner() {
                                     {/* LEARN */}
                                     <div className="uk-flex uk-flex-middle uk-flex-nowrap">
                                         <img
-                                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/e0b6e350-611e-11ef-a1af-d1ea895731e2_live-streaming.svg"
+                                            src={learn}
                                             alt="Read Icon"
                                             width="20"
                                             height="20"
@@ -51,7 +58,7 @@ function Banner() {
                                     {/* APPLY */}
                                     <div className="uk-flex uk-flex-middle uk-flex-nowrap">
                                         <img
-                                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/fca99090-4f25-11ef-bb2f-cf969e117417_online-learning.svg"
+                                            src={apply}
                                             alt="Check Icon"
                                             width="20"
                                             height="20"
@@ -65,7 +72,7 @@ function Banner() {
                                     {/* GET PLACED */}
                                     <div className="uk-flex uk-flex-middle uk-flex-nowrap">
                                         <img
-                                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/fcaaf020-4f25-11ef-bb2f-cf969e117417_certificate.svg"
+                                            src={placed}
                                             alt="Cap Icon"
                                             width="20"
                                             height="20"
@@ -82,7 +89,7 @@ function Banner() {
                                 >
                                     {/* Student Profile Image */}
                                     <img
-                                        src="https://hubble.cdn.chittiapp.com/cdn_uploads/a880b860-612f-11ef-a1af-d1ea895731e2_student-profile-mix.png"
+                                        src={student}
                                         alt="Student Profile"
                                         width="160"
                                         height="40"
@@ -94,7 +101,7 @@ function Banner() {
                                     <div className="uk-flex uk-flex-column" style={{ gap: '6px' }}>
                                         {/* Stars */}
                                         <img
-                                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/ece342b0-32b9-11ef-93e3-ad58e1e8f122_5-Stars.png"
+                                            src={star}
                                             alt="5 Stars"
                                             style={{ height: '18px', width: '98px' }}
                                         />
@@ -113,7 +120,7 @@ function Banner() {
                                         </div>
                                     </div>
                                 </div>
-                               
+
                             </div>
                             <div className="uk-visible@l  uk-margin-large-top">
                                 <div
@@ -123,7 +130,7 @@ function Banner() {
                                     {/* Sparkle Icon */}
                                     <img
                                         className="uk-preserve-width"
-                                        src="https://hubble.cdn.chittiapp.com/cdn_uploads/5f336bb0-bc6c-11ef-9467-dbf64511c27d_sparkle.gif"
+                                        src={sparkle}
                                         alt="Sparkle"
                                         width="24"
                                         height="24"
