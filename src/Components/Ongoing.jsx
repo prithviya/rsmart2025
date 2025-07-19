@@ -1,6 +1,8 @@
 import React from 'react';
 import Knowledge from '../assets/knowledge.svg';
 import dot from '../assets/dot.webp';
+import people from '../assets/people.svg';
+import yellowstar from '../assets/yellowstar.svg'
 
 function Ongoing() {
     return (
@@ -15,6 +17,7 @@ function Ongoing() {
                                 width: '72px',
                             }}
                             className=""
+                            alt='knowledge'
                         />
                         <div className="uk-flex uk-flex-center" style={{ gap: '0.375rem' }}>
 
@@ -102,7 +105,7 @@ function Ongoing() {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -122,7 +125,7 @@ function Ongoing() {
                                                     borderRight: '1px solid #FDE047',
                                                     background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
                                                 }}>
-                                                <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b73a3c40-1734-11ef-bcb0-c1c1625fd85c_Star-Icon-Yellow.svg"
+                                                <img src={yellowstar}
                                                     className="uk-preserve-width"
                                                     width="25"
                                                     height="25"
@@ -167,7 +170,7 @@ function Ongoing() {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -187,7 +190,7 @@ function Ongoing() {
                                                     borderRight: '1px solid #FDE047',
                                                     background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
                                                 }}>
-                                                <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b73a3c40-1734-11ef-bcb0-c1c1625fd85c_Star-Icon-Yellow.svg"
+                                                <img src={yellowstar}
                                                     className="uk-preserve-width"
                                                     width="25"
                                                     height="25"
@@ -232,7 +235,7 @@ function Ongoing() {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -252,7 +255,7 @@ function Ongoing() {
                                                     borderRight: '1px solid #FDE047',
                                                     background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
                                                 }}>
-                                                <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b73a3c40-1734-11ef-bcb0-c1c1625fd85c_Star-Icon-Yellow.svg"
+                                                <img src={yellowstar}
                                                     className="uk-preserve-width"
                                                     width="25"
                                                     height="25"

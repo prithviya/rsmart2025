@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
-
+import calendar from '../assets/calendar.svg';
+import people from '../assets/people.svg';
 
 // Initialize UIkit with icons
 UIkit.use(Icons);
@@ -112,7 +113,7 @@ const SwitcherComponent = () => {
                         <div className="uk-grid-small uk-child-width-1-3@m" uk-grid="true">
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -122,7 +123,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -138,7 +139,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
+                                                    <img src={calendar}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -186,7 +187,7 @@ const SwitcherComponent = () => {
                             </div>
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -196,7 +197,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -212,7 +213,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
+                                                    <img src={calendar}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -260,7 +261,7 @@ const SwitcherComponent = () => {
                             </div>
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -270,7 +271,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -286,235 +287,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        5 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    4.8
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            Data Science & Machine Learning
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Become a Data Scientist. No Coding Knowledge Required.
-                                        </p>
-                                        <hr />
-                                        <div className="uk-clearfix">
-                                            <div className="uk-float-left">
-                                                <div className="">
-                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div className="uk-float-right">
-                                                <div>
-                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div className="uk-grid-small uk-child-width-1-3@m" uk-grid="true">
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2000+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        5 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    4.8
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            Data Science & Machine Learning
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Become a Data Scientist. No Coding Knowledge Required.
-                                        </p>
-                                        <hr />
-                                        <div className="uk-clearfix">
-                                            <div className="uk-float-left">
-                                                <div className="">
-                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div className="uk-float-right">
-                                                <div>
-                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2000+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Duration"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        5 Months
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                            {/* Right side - Rating */}
-                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                style={{
-                                                    borderRight: '1px solid #FDE047',
-                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
-                                                }}>
-
-                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
-                                                    4.8
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <h4 className='text-white uk-text-bold'>
-                                            Data Science & Machine Learning
-                                        </h4>
-                                        <p className='uk-text-muted'>
-                                            Become a Data Scientist. No Coding Knowledge Required.
-                                        </p>
-                                        <hr />
-                                        <div className="uk-clearfix">
-                                            <div className="uk-float-left">
-                                                <div className="">
-                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
-                                                </div>
-                                            </div>
-                                            <div className="uk-float-right">
-                                                <div>
-                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
-                                    <div className='uk-text-left uk-padding-small'>
-                                        <div className="uk-flex uk-flex-between uk-flex-middle">
-                                            {/* Left side - User count and Duration */}
-                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
-                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
-                                                        className="uk-preserve-width"
-                                                        width="25"
-                                                        height="25"
-                                                        alt="Users"
-                                                    />
-                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
-                                                        2000+
-                                                    </span>
-                                                </div>
-
-                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
-                                                    style={{
-                                                        backgroundColor: '#262626',
-                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
-                                                    }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
+                                                    <img src={calendar}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -568,7 +341,7 @@ const SwitcherComponent = () => {
                         <div className="uk-grid-small uk-child-width-1-3@m" uk-grid="true">
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -578,7 +351,7 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b36928d0-5094-11ef-bb17-fb25afea96ce_user-group.svg"
+                                                    <img src={people}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
@@ -594,7 +367,235 @@ const SwitcherComponent = () => {
                                                         backgroundColor: '#262626',
                                                         boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
                                                     }}>
-                                                    <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/b3681760-5094-11ef-bb17-fb25afea96ce_calendar.svg"
+                                                    <img src={calendar}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Duration"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        5 Months
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            {/* Right side - Rating */}
+                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                style={{
+                                                    borderRight: '1px solid #FDE047',
+                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
+                                                }}>
+
+                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
+                                                    4.8
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <h4 className='text-white uk-text-bold'>
+                                            Data Science & Machine Learning
+                                        </h4>
+                                        <p className='uk-text-muted'>
+                                            Become a Data Scientist. No Coding Knowledge Required.
+                                        </p>
+                                        <hr />
+                                        <div className="uk-clearfix">
+                                            <div className="uk-float-left">
+                                                <div className="">
+                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
+                                                </div>
+                                            </div>
+                                            <div className="uk-float-right">
+                                                <div>
+                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
+                                    <div className='uk-text-left uk-padding-small'>
+                                        <div className="uk-flex uk-flex-between uk-flex-middle">
+                                            {/* Left side - User count and Duration */}
+                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
+                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={people}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Users"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        2000+
+                                                    </span>
+                                                </div>
+
+                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={calendar}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Duration"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        5 Months
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            {/* Right side - Rating */}
+                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                style={{
+                                                    borderRight: '1px solid #FDE047',
+                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
+                                                }}>
+
+                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
+                                                    4.8
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <h4 className='text-white uk-text-bold'>
+                                            Data Science & Machine Learning
+                                        </h4>
+                                        <p className='uk-text-muted'>
+                                            Become a Data Scientist. No Coding Knowledge Required.
+                                        </p>
+                                        <hr />
+                                        <div className="uk-clearfix">
+                                            <div className="uk-float-left">
+                                                <div className="">
+                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
+                                                </div>
+                                            </div>
+                                            <div className="uk-float-right">
+                                                <div>
+                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
+                                    <div className='uk-text-left uk-padding-small'>
+                                        <div className="uk-flex uk-flex-between uk-flex-middle">
+                                            {/* Left side - User count and Duration */}
+                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
+                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={people}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Users"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        2000+
+                                                    </span>
+                                                </div>
+
+                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={calendar}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Duration"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        5 Months
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            {/* Right side - Rating */}
+                                            <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                style={{
+                                                    borderRight: '1px solid #FDE047',
+                                                    background: 'linear-gradient(90deg, rgba(253, 224, 71, 0) 0%, rgba(253, 224, 71, 0.12) 100%)'
+                                                }}>
+
+                                                <span className="uk-text-small uk-margin-small-left" style={{ color: 'white', padding: '10px', fontWeight: 600 }}>
+                                                    4.8
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <h4 className='text-white uk-text-bold'>
+                                            Data Science & Machine Learning
+                                        </h4>
+                                        <p className='uk-text-muted'>
+                                            Become a Data Scientist. No Coding Knowledge Required.
+                                        </p>
+                                        <hr />
+                                        <div className="uk-clearfix">
+                                            <div className="uk-float-left">
+                                                <div className="">
+                                                    <button className="uk-button uk-button-default text-white uk-border-rounded">View More</button>
+                                                </div>
+                                            </div>
+                                            <div className="uk-float-right">
+                                                <div>
+                                                    <button className="uk-button uk-button-danger uk-border-rounded"><span className="uk-margin-small-right text-white" uk-icon="icon: download" />Brochure</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div className="uk-grid-small uk-child-width-1-3@m" uk-grid="true">
+                            <div>
+                                <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-vector/online-education-student-course-technology-illustration-knowledge-computer-internet-web-distance-study-people_109722-1865.jpg" alt="" />
+                                    <div className='uk-text-left uk-padding-small'>
+                                        <div className="uk-flex uk-flex-between uk-flex-middle">
+                                            {/* Left side - User count and Duration */}
+                                            <div className="uk-flex uk-flex-middle uk-grid-small" uk-grid>
+                                                <div className="uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={people}
+                                                        className="uk-preserve-width"
+                                                        width="25"
+                                                        height="25"
+                                                        alt="Users"
+                                                    />
+                                                    <span className="uk-text-small uk-margin-small-left" style={{ color: '#a3a3a3', padding: '10px', fontWeight: 500 }}>
+                                                        2000+
+                                                    </span>
+                                                </div>
+
+                                                <div className="uk-margin-small-left uk-flex uk-flex-middle uk-border-rounded"
+                                                    style={{
+                                                        backgroundColor: '#262626',
+                                                        boxShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 4px 0px, rgba(255, 255, 255, 0.12) 0px 1px 1px 0px inset'
+                                                    }}>
+                                                    <img src={calendar}
                                                         className="uk-preserve-width"
                                                         width="25"
                                                         height="25"
