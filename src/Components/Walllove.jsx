@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import heart from '../assets/heart.svg';
+import dot from '../assets/dot.webp';
+import student from '../assets/setpics.webp'
+import star from '../assets/5star.webp'
 
 const testimonials = [
-    // === Add your 10 testimonials here ===
     {
         name: "Sruthi Selvam",
         role: "Data Architect",
@@ -97,7 +100,7 @@ function Walllove() {
             <div className="uk-padding-small uk-padding-remove-horizontal@m uk-padding-small@l uk-text-center">
                 {/* Heading */}
                 <img
-                    src="https://hubble.cdn.chittiapp.com/cdn_uploads/f0cb14f0-4fe9-11ef-b1fe-5781ecb07285_wol-illustration.svg"
+                    src={heart}
                     alt="Live Illustration"
                     style={{
                         height: '150px',
@@ -149,7 +152,7 @@ function Walllove() {
                         }}
                     />
                     <img
-                        src="https://hubble.cdn.chittiapp.com/cdn_uploads/0de4bc50-4fd4-11ef-b1fe-5781ecb07285_h-dot.png"
+                        src={dot}
                         alt="dot"
                         style={{
                             height: '18px',
@@ -181,7 +184,7 @@ function Walllove() {
             <div className="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-margin-medium-top uk-margin-small-bottom">
                 {/* Main Image */}
                 <img
-                    src="https://hubble.cdn.chittiapp.com/cdn_uploads/a880b860-612f-11ef-a1af-d1ea895731e2_student-profile-mix.png"
+                    src={student}
                     className="uk-width-1-1"
                     style={{ maxWidth: '160px', height: '40px' }}
                     alt="Student profiles"
@@ -193,7 +196,7 @@ function Walllove() {
                     {/* Stars Rating */}
                     <div className="uk-flex uk-flex-center">
                         <img
-                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/ece342b0-32b9-11ef-93e3-ad58e1e8f122_5-Stars.png"
+                            src={star}
                             style={{ width: '88px', height: '16px' }}
                             alt="5 star rating"
                             data-uk-svg
@@ -220,7 +223,7 @@ function Walllove() {
                             <div class="uk-clearfix">
                                 <div class="uk-float-left">
                                     <div class="">
-                                        <img src="https://hubble.cdn.chittiapp.com/cdn_uploads/ece342b0-32b9-11ef-93e3-ad58e1e8f122_5-Stars.png" alt="" width="100" />
+                                        <img src={star} alt="" width="100" />
                                     </div>
                                 </div>
                                 <div class="uk-float-right">
