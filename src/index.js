@@ -7,16 +7,22 @@ import "uikit/dist/css/uikit.min.css";
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 
+// Fix: Suppress ResizeObserver errors
+window.addEventListener("error", (e) => {
+  if (e.message.includes("ResizeObserver")) {
+    e.preventDefault();
+    return false;
+  }
+});
+
+// Initialize UIkit
 UIkit.use(Icons);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>  // Remove if error persists
+  <App />
+  // </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

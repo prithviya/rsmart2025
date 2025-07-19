@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Knowledge from '../assets/knowledge.svg';
+import dot from '../assets/dot.webp';
 
 function Ongoing() {
     return (
@@ -6,15 +8,13 @@ function Ongoing() {
             <div className="uk-section">
                 <div className="uk-container">
                     <div className="uk-padding-small uk-padding-remove-horizontal@m uk-padding-small@l uk-text-center">
-                        {/* Heading */}
                         <img
-                            src="https://hubble.cdn.chittiapp.com/cdn_uploads/f0c9b560-4fe9-11ef-b1fe-5781ecb07285_ongoing-illustration.svg"
-                            alt="Live Illustration"
+                            src={Knowledge}
                             style={{
                                 height: '72px',
                                 width: '72px',
                             }}
-                            className="" // visible on medium+ screens (like lg:h-[84px] lg:w-[84px])
+                            className=""
                         />
                         <div className="uk-flex uk-flex-center" style={{ gap: '0.375rem' }}>
 
@@ -59,7 +59,7 @@ function Ongoing() {
                                 }}
                             />
                             <img
-                                src="https://hubble.cdn.chittiapp.com/cdn_uploads/0de4bc50-4fd4-11ef-b1fe-5781ecb07285_h-dot.png"
+                                src={dot}
                                 alt="dot"
                                 style={{
                                     height: '18px',
@@ -92,7 +92,7 @@ function Ongoing() {
                         <div className="uk-grid-small uk-child-width-1-3@m uk-margin-top" uk-grid="true">
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-psd/workshop-webinar-social-media-banner-template_695097-1784.jpg?semt=ais_hybrid&w=740" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -157,7 +157,7 @@ function Ongoing() {
                             </div>
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-psd/workshop-webinar-social-media-banner-template_695097-1784.jpg?semt=ais_hybrid&w=740" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}
@@ -222,7 +222,7 @@ function Ongoing() {
                             </div>
                             <div>
                                 <div className="uk-padding-small cus-border uk-border-rounded cus-card-bg">
-                                    <img className='uk-border-rounded' src="https://hubble.cdn.chittiapp.com/cdn_uploads/28d7c830-5566-11ef-b501-3f25b685e045_data-science-thumb.png" alt="" />
+                                    <img className='uk-border-rounded' src="https://img.freepik.com/premium-psd/workshop-webinar-social-media-banner-template_695097-1784.jpg?semt=ais_hybrid&w=740" alt="" />
                                     <div className='uk-text-left uk-padding-small'>
                                         <div className="uk-flex uk-flex-between uk-flex-middle">
                                             {/* Left side - User count and Duration */}

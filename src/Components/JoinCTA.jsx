@@ -1,4 +1,5 @@
 import React from 'react';
+import Student from '../assets/setpics.webp';
 
 const JoinCTA = () => {
     return (
@@ -24,9 +25,10 @@ const JoinCTA = () => {
                             background: 'linear-gradient(180deg, #ffffff 0%, #999999 100%)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
+                            marginBottom: '0px'
                         }}
                     >
-                        Join with Fellow
+                        Join with 
                     </div>
                     <div
                         className="uk-text-bold"
@@ -34,14 +36,15 @@ const JoinCTA = () => {
                             fontSize: '30px',
                             lineHeight: '1.5',
                             color: '#FF0078',
-                            marginLeft: '6px'
+                            marginLeft: '6px',
+                            marginBottom: '0px'
                         }}
                     >
-                        Learners
+                        Fellow Learners
                     </div>
                 </div>
 
-                <div className="uk-text-center uk-margin-small-top">
+                <div className="uk-text-center uk-margin-remove">
                     <p className="uk-text-muted" style={{ fontSize: '16px' }}>
                         Our foundation rests on real world relevance.
                     </p>
@@ -49,9 +52,9 @@ const JoinCTA = () => {
 
                 <div className="uk-margin-small-top">
                     <img
-                        src="https://hubble.cdn.chittiapp.com/cdn_uploads/a884fe20-612f-11ef-a1af-d1ea895731e2_student-profile-mix-plus.png"
+                        src={Student}
                         alt="student group"
-                        style={{ height: '48px', width: '250px' }}
+                        style={{ height: '48px', width: '200px' }}
                         className="uk-visible@s"
                     />
                 </div>
