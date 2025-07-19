@@ -1,7 +1,7 @@
 import React from 'react';
 import Knowledge from '../assets/knowledge.svg';
 import dot from '../assets/dot.webp';
-import people from '../assets/people.svg';
+import people from '../assets/grouppeople.svg';
 import yellowstar from '../assets/yellowstar.svg'
 
 function Ongoing() {
